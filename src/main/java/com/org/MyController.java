@@ -12,4 +12,7 @@ public class MyController {
     public String home(){
         return "this is view page!!";
     }
+    public String welcome(){
+        return "this is welcome page!!";
+    }
 }
