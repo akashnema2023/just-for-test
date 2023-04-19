@@ -1,2 +1,4 @@
 com\org\FirstprojectApplication.class
 com\org\MyController.class
+com\org\UserEntity.class
+com\org\UserRepo.class
