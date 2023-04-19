@@ -3,6 +3,8 @@ package com.org;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/emp")
 public class MyController {
@@ -23,4 +25,10 @@ public class MyController {
         userRepo.save(userEntity);
         return "successfully add user in your db!!";
     }
+    @GetMapping("/showalluser")
+    public List  show(){
+        List<UserEntity> all = userRepo.findAll();
+        return all;
+    }
+
 }
