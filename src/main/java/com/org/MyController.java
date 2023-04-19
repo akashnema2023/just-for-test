@@ -12,6 +12,7 @@ public class MyController {
     public String home(){
         return "this is view page!!";
     }
+    @GetMapping("/welcome")
     public String welcome(){
         return "this is welcome page!!";
     }
