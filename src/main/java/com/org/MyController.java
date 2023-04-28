@@ -12,7 +12,7 @@ public class MyController {
 //    UserRepo userRepo;
     @GetMapping("/view")
     public String home(){
-        return "this is view page!!";
+        return "this is view page this is view in git!!";
     }
     @GetMapping("/welcome")
     public String welcomes(){
