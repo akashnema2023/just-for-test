@@ -16,7 +16,7 @@ public class MyController {
     }
     @GetMapping("/welcome")
     public String welcomes(){
-        return "this is welcome page!!";
+        return "this is welcome page!! this changes by akash system";
     }
 
 //    @PostMapping("/add")
