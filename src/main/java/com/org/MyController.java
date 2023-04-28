@@ -1,6 +1,5 @@
 package com.org;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -9,8 +8,8 @@ import java.util.List;
 @RequestMapping("/emp")
 public class MyController {
 
-    @Autowired
-    UserRepo userRepo;
+//    @Autowired
+//    UserRepo userRepo;
     @GetMapping("/view")
     public String home(){
         return "this is view page!!";
@@ -20,15 +19,15 @@ public class MyController {
         return "this is welcome page!!";
     }
 
-    @PostMapping("/add")
-    public String addUser(@RequestBody UserEntity userEntity){
-        userRepo.save(userEntity);
-        return "successfully add user in your db!!";
-    }
-    @GetMapping("/showalluser")
-    public List  show(){
-        List<UserEntity> all = userRepo.findAll();
-        return all;
-    }
+//    @PostMapping("/add")
+//    public String addUser(@RequestBody UserEntity userEntity){
+//        userRepo.save(userEntity);
+//        return "successfully add user in your db!!";
+//    }
+//    @GetMapping("/showalluser")
+//    public List  show(){
+//        List<UserEntity> all = userRepo.findAll();
+//        return all;
+//    }
 
 }
